@@ -11,11 +11,11 @@ namespace AgeTask
         public static int AgeCalculator(this DateTime date)
         {
             DateTime now = DateTime.Now;
-            if (now.Month - date.Month >= 0 && now.Day - date.Day >= 0)
-            {
-                return now.Year - date.Year;
-            }
-            return now.Year - date.Year - 1;
+            int age = now.Year - date.Year;
+
+            if (date > now.AddYears(-age))
+                age--;
+            return age;
         }
     }
 }
