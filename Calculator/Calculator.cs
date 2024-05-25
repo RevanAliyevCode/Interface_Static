@@ -17,7 +17,7 @@ namespace Calculator
             NumberTwo = numberTwo;
         }
 
-        public void Divide()
+        public void Sum()
         {
             Console.WriteLine($"{NumberOne} + {NumberTwo} = {NumberOne + NumberTwo}");
         }
@@ -32,7 +32,7 @@ namespace Calculator
             Console.WriteLine($"{NumberOne} - {NumberTwo} = {NumberOne - NumberTwo}");
         }
 
-        public void Sum()
+        public void Divide()
         {
             Console.WriteLine($"{NumberOne} / {NumberTwo} = {NumberOne / NumberTwo}");
         }
